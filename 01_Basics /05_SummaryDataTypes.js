@@ -9,6 +9,7 @@ const isloggedin = false
 const isoutin = null
 
 let cityname;
+
 const id = Symbol('123')
 const anotherid = Symbol('123')
 
