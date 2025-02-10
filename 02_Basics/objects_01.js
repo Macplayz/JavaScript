@@ -20,17 +20,28 @@ const objuser  = {
     logged : ["Monday","Saturday"]
 }
 
-console.log(objuser.email)
-console.log(objuser["email"])
-console.log(typeof sym)
-console.log(objuser[sym]);
+// console.log(objuser.email)
+// console.log(objuser["email"])
+// console.log(typeof sym)
+// console.log(objuser[sym]);
 
-objuser.roll_no = 23;
+// objuser.roll_no = 23;
 
-console.log(objuser)
-Object.freeze(objuser)//Dont change the values
-objuser.roll_no=13
+// console.log(objuser)
+// Object.freeze(objuser)//Dont change the values
+// objuser.roll_no=13
+
+// objuser.greeting = function(){
+//     console.log("Hello World");
+// }
+
 
 objuser.greeting = function(){
-    console.log("Hello World");
+    console.log("Hello JS user");
 }
+objuser.greetingTwo = function(){
+    console.log(`Hello JS user, ${this.name}`);
+}
+
+console.log(objuser.greeting());
+console.log(objuser.greetingTwo());
